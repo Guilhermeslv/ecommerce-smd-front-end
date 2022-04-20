@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%; /* 10px */
+}
+body, input, textarea, button{
+    font-size: clamp(1.2rem, 1.6rem, 2vw);
+    font-family: 'Poppins', sans-serif;
+}
