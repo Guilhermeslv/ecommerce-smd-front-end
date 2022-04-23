@@ -1,4 +1,5 @@
 import { BiUserCircle, BiCart } from "react-icons/bi"
+import { Link } from "react-router-dom"
 import "./styles.css"
 
 type Props = {
@@ -9,10 +10,16 @@ export function Header(props: Props) {
 
     return (
         <header>
-            <span>{props.title}</span>
+            <Link to="/">
+                <span>{props.title}</span>
+            </Link>            
             <div className="icons-wrapper">
-                <BiUserCircle />
-                <BiCart />
+                <div>
+                    <BiUserCircle />
+                </div>
+                <div>
+                    <BiCart />
+                </div>                
             </div>
         </header>
     )

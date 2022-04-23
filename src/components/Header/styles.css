@@ -1,20 +1,40 @@
-#home header{
-    background-color: #808080;
-    color: #f8f8f8;
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 }
 
-#home header div.icons-wrapper{
+header span{
+    font-weight: 1000;
+    color: var(--cor-texto);
+}
+header span:hover{
+    transform: scale(1.01);
+}
+
+header div.icons-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    color: var(--cor-destaque);
 }
 
-#home header div.icons-wrapper svg{
+header div.icons-wrapper div{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.icons-wrapper div:hover{
+    transform: scale(1.05);
+}
+
+header div.icons-wrapper div svg{
     font-size: 3.5rem;
     cursor: pointer;
 }

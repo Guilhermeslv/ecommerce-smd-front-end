@@ -1,0 +1,4 @@
+div#home {
+    margin: 0;
+    padding: var(--padding-geral);
+}
