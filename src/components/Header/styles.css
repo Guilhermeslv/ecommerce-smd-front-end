@@ -4,13 +4,13 @@ header{
     align-items: center;
     padding: 1rem 2rem;
 }
-
-header span{
+.logo{
     font-weight: 1000;
     color: var(--cor-texto);
+    cursor: pointer;
 }
-header span:hover{
-    transform: scale(1.01);
+span.logo:hover{
+    transform: scale(1.05);
 }
 
 header div.icons-wrapper{

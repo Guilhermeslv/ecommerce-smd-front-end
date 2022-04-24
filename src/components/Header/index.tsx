@@ -10,16 +10,22 @@ export function Header(props: Props) {
 
     return (
         <header>
-            <Link to="/">
-                <span>{props.title}</span>
-            </Link>            
+                <span className="logo">
+                    <Link to="/">
+                        {props.title}
+                    </Link>    
+                </span>          
             <div className="icons-wrapper">
-                <div>
-                    <BiUserCircle />
-                </div>
-                <div>
-                    <BiCart />
-                </div>                
+                <Link to="/login">
+                    <div>
+                        <BiUserCircle />
+                    </div>
+                </Link>
+                <Link to="/carrinho">
+                    <div>                    
+                        <BiCart />                    
+                    </div> 
+                </Link>               
             </div>
         </header>
     )

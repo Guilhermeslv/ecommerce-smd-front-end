@@ -4,19 +4,19 @@ import "../styles/cart.css"
 export function Cart(){
     return(
         <div id="cart">
-            <div className="cart-items-wrapper">
+            <div className="card card-shadow cart-items-wrapper">
                 <span className="title title-cart-items">Itens no carrinho</span>
                 <ProductCart />
                 <ProductCart />
                 <ProductCart />
             </div>
-            <div className="cart-finish-wrapper">
+            <div className="card card-shadow cart-finish-wrapper">
                <div className="title title-cart-finish"><span>Finalize sua compra</span></div>
                <div className="price-cart-finish">
                    <span>R$ 1999,90</span>
                    <div className="cart-finish-buttons-wrapper">
-                       <button>Continuar comprando</button>
-                       <button className="blue-button">Finalizar compra</button>
+                       <button className="btn button-secondary">Continuar comprando</button>
+                       <button className="btn button-primary">Finalizar compra</button>
                    </div>
                </div>
                
