@@ -3,7 +3,7 @@ import "./styles.css"
 
 export function Cart(){
     return(
-        <div id="cart">
+        <div id="cart" className="container">
             <div className="card card-shadow cart-items-wrapper">
                 <span className="title title-cart-items">Itens no carrinho</span>
                 <ProductCart />

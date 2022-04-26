@@ -2,7 +2,7 @@ import "./styles.css"
 
 export function Login(){
     return (
-        <div id="login">
+        <div id="login" className="container">
             <div className="login-page-text-wrapper">
 
                 <div className="login-page-text">

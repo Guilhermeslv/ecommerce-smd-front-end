@@ -1,8 +1,4 @@
 #cart{
-    margin: 0;
-    padding: var(--padding-geral);
-    display: flex;
-    gap: 2rem;
     color: var(--cor-texto);
 }
 

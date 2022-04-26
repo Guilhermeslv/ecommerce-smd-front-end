@@ -1,8 +1,4 @@
 #product{
-    margin: 0;
-    padding: var(--padding-geral);
-    display: flex;
-    gap: 2rem;
     height: 50rem;
     min-height: 50rem;
     max-height: 50rem;

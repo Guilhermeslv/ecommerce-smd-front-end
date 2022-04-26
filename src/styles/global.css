@@ -27,6 +27,13 @@ body, input, textarea, button{
     font-size: clamp(1.2rem, 1.6rem, 2vw);
     font-family: 'Nunito', 'Poppins', sans-serif;
 }
+.container{
+    margin: 0;
+    padding: var(--padding-geral);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
 .title{
     font-size: var(--title-size);
     font-weight: var(--title-weight);

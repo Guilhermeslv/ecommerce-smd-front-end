@@ -2,7 +2,7 @@ import "./styles.css"
 
 export function Product(){
     return (
-        <div id="product">
+        <div id="product" className="container">
             <div className="card card-shadow product-page-image">
             </div>
             <div className="card card-shadow product-page-description">
