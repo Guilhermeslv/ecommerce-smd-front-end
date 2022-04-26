@@ -1,5 +1,5 @@
-import { ProductCart } from "../components/ProductCart"
-import "../styles/cart.css"
+import { ProductCart } from "../../components/ProductCart"
+import "./styles.css"
 
 export function Cart(){
     return(
