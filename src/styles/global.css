@@ -77,6 +77,22 @@ body, input, textarea, button{
     color: var(--cor-texto-claro);
 }
 
+.form-group{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.form-group input{
+    border:1px solid var(--cor-texto);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    width: 100%;    
+}
+.form-group label{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
 
 a{
     all: unset;

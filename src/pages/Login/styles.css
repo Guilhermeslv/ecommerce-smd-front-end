@@ -45,5 +45,12 @@
     transform: scale(1.05);
 }
 .login-page-form{
-    width: 50%;    
+    width: 50%;
+    height: fit-content;
+    padding: var(--padding-geral);
+}
+#cad-cliente{
+    width: 50%;
+    margin: 2rem 0;
+    align-self: center;
 }
