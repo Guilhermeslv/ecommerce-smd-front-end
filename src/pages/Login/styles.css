@@ -46,8 +46,15 @@
 }
 .login-page-form{
     width: 50%;
+    min-height: 50rem;
     height: fit-content;
     padding: var(--padding-geral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-page-form form{
+    width: 100%;
 }
 #cad-cliente{
     width: 50%;
