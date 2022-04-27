@@ -50,7 +50,11 @@ function LoginForm(){
 
 export function Login(){
 
-    const [form, setForm] = useState(0);
+    const [isLoginForm, setIsLoginForm] = useState(false);
+
+    function handleChangeForm(){
+        setIsLoginForm(!isLoginForm)
+    }
 
     return (
         <div id="login" className="container">
@@ -68,11 +72,11 @@ export function Login(){
                 </div>
 
                 <div className="login-page-text-login">
-                    <span>faça login</span>
+                    <span onClick={handleChangeForm}>{isLoginForm? 'cadastre-se': 'faça login'}</span>
                 </div>                 
             </div>
             <div className="card card-shadow login-page-form">
-                <CadForm />
+                {isLoginForm ? <LoginForm />: <CadForm />}
             </div>
         </div>
     )
