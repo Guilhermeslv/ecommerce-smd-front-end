@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom"
 import "./styles.css"
 
-export function ProductItem(){
+type ProductItem = {
+    product_name: string;
+    product_description: string;
+    product_price: number;
+}
+
+export function ProductItem(props:ProductItem){
     return (
         <Link to="/produto">
             <div className="card card-shadow product-item">
@@ -9,10 +15,10 @@ export function ProductItem(){
                     
                 </div>
                 <div className="product-description">
-                    <span className="product-name">Nome do produto</span>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
+                    <span className="product-name">{props.product_name}</span>
+                    <p>{props.product_description}</p>
                     <div className="product-price">
-                        <span >R$ 199,90</span>
+                        <span >R$ {props.product_price}</span>
                     </div>
                 </div>
             </div>

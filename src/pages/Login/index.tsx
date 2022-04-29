@@ -1,5 +1,7 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import "./styles.css"
+import { Navigate } from "react-router-dom"
 
 function CadForm(){
     return (
@@ -25,14 +27,19 @@ function CadForm(){
                         <input type="password" />
                     </div>
                     <div className="form-group">
-                        <button className="btn button-primary" id="cad-cliente">Cadastrar</button>
+                        <button type="button" className="btn button-primary" id="cad-cliente">Cadastrar</button>
                     </div>
                 </form>
     )
 }
+
+function loginAction(){
+    alert("Redirecionar para a rota de usuários")
+}
+
 function LoginForm(){
     return (
-        <form action="" method="post">
+        <form action="">
             <div className="form-group">
                 <label htmlFor="user">Login</label>
                 <input type="text" />
@@ -42,7 +49,7 @@ function LoginForm(){
                 <input type="password" />
             </div>
             <div className="form-group">
-                <button className="btn button-primary" id="cad-cliente">Cadastrar</button>
+                <button className="btn button-primary" type="button" onClick={loginAction} id="cad-cliente">Login</button>
             </div>
         </form>
     )

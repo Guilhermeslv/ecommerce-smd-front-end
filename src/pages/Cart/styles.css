@@ -23,7 +23,7 @@
     height: 100%;
     width: 100%;
     align-items: flex-end;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .cart-finish-buttons-wrapper{
     margin-top: 1rem;
